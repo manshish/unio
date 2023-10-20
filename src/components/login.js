@@ -11,6 +11,7 @@ export default function Login() {
         console.log('Received values of form: ', values);
       };
   return (
+    
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '70vh'}}>
     <div className="card card-container" style={{width:300 , padding:15}}>
     <div style={{marginBottom:20}}><h3>LOGIN</h3></div>
@@ -66,5 +67,6 @@ export default function Login() {
     </Form>
     </div>
     </div>
+    
   )
 }
