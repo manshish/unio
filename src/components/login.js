@@ -3,6 +3,7 @@ import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button,  Form, Input } from 'antd';
 import {Link} from "react-router-dom";
 import './login.css';
+import logo from './unio.png';
 
 
 
@@ -13,7 +14,15 @@ export default function Login() {
   return (
     
     <div style={{display: 'flex',  justifyContent:'center', alignItems:'center', height: '70vh'}}>
-    <div className="card card-container" style={{width:300 , padding:15}}>
+    <img src={logo} style={{width: 560,
+height: 450,
+top: 77,
+left: 270,
+
+zIndex:-1,
+position:'absolute'
+}} alt="Logo" />
+    <div className="card card-container" style={{width:300 , padding:15,zIndex:4}}>
     <div style={{marginBottom:20}}><h3>LOGIN</h3></div>
     <Form
       name="normal_login"
